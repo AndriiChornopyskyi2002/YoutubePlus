@@ -1,0 +1,49 @@
+{
+  "name": "youtube-plus",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@react-oauth/google": "^0.12.1",
+    "@szhsin/react-accordion": "^1.4.0",
+    "axios": "^1.8.4",
+    "bulma": "^1.0.3",
+    "chart": "^0.1.2",
+    "chart.js": "^4.4.8",
+    "date-fns": "^4.1.0",
+    "drizzle-kit": "^0.30.6",
+    "drizzle-orm": "^0.41.0",
+    "framer-motion": "^12.6.2",
+    "gapi-script": "^1.2.0",
+    "jwt-decode": "^4.0.0",
+    "mysql2": "^3.14.0",
+    "next": "15.2.3",
+    "next-auth": "^4.24.11",
+    "openai": "^4.91.1",
+    "react": "^19.0.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.0.0",
+    "react-loading-indicators": "^1.0.0",
+    "react-paginate": "^8.3.0",
+    "react-select": "^5.10.1",
+    "sass": "^1.86.0",
+    "sweetalert2": "^11.17.2",
+    "swiper": "^11.2.6",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "typescript": "^5"
+  }
+}
