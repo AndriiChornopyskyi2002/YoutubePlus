@@ -1,3 +1,10 @@
+![](./media-demonstration/1.gif)
+![](./media-demonstration/2.gif)
+![](./media-demonstration/3.gif)
+![](./media-demonstration/4.jpg)
+![](./media-demonstration/5.jpg)
+![](./media-demonstration/6.jpg)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
