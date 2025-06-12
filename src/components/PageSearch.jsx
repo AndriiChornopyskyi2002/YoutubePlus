@@ -1,6 +1,6 @@
 "use client";
 import {AnimatePresence, motion} from "framer-motion";
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import AuthCard from "./AuthCard";
 import useAuthStore from "../stores/authStore";
 import Select from "react-select/base";
@@ -51,7 +51,7 @@ export default function PageSearch() {
         for (const channel of selectedChannels) {
             const channelId = channel.snippet.resourceId.channelId;
             const response = await fetch(
-                `https://www.googleapis.com/youtube/v3/search?key=${process.env.NEXT_PUBLIC_OPENAI_KEY}&channelId=${channelId}&part=snippet&order=date&maxResults=25`
+                `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_API_KEY}&channelId=${channelId}&part=snippet&order=date&maxResults=25`
             );
             const data = await response.json();
             allVideos = [...allVideos, ...data.items];
@@ -198,6 +198,12 @@ export default function PageSearch() {
             setLoading(false);
         }
     };
+
+    useEffect(() => {
+        if(!user) {
+            setLoading(false)
+        }
+    }, [user])
 
     return (
         <motion.main className="has-background-light" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} style={{ minHeight: '100vh' }}>
